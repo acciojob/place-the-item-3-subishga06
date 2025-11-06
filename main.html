@@ -1,21 +1,37 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox CSS Styling</title>
+
+  <style>
+    .holder {
+      display: flex;              /* Enable Flexbox layout */
+      flex-direction: row;        /* Arrange items in a row */
+      justify-content: space-evenly; /* Evenly space items horizontally */
+      flex-wrap: wrap;            /* Move items to next line if they overflow */
+    }
+
+    /* Optional styling for better visibility */
+    .item {
+      background-color: lightblue;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
 <body>
-<div class="holder">
+  <div class="holder">
     <div class="item">Item 1</div>
     <div class="item">Item 2</div>
     <div class="item">Item 3</div>
-</div>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  </div>
 
+  <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
